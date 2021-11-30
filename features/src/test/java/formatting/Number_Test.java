@@ -23,20 +23,20 @@ public class Number_Test {
     @Test
     public void givenAn2000_whenFormat_thenRepresentsAsString() {
         assertEquals("2,000", NORMAL_FORMAT_SHORT.format(TWO_K));
-        assertEquals("2K", COMPACT_FORMAT_SHORT.format(TWO_K));
         assertEquals("2 thousand", COMPACT_FORMAT_LONG.format(TWO_K));
 
-        assertEquals("2T", IN_COMPACT_FORMAT_SHORT.format(TWO_K));
+        assertEquals("2K", COMPACT_FORMAT_SHORT.format(TWO_K));
+        assertEquals("2T", IN_COMPACT_FORMAT_SHORT.format(TWO_K)); //2 THOUSAND
     }
 
     @Tag("java12")
     @Test
     public void givenAn300K_whenFormat_thenRepresentsAsString() {
         assertEquals("300,000", NORMAL_FORMAT_SHORT.format(THREE_HUNDRED_K));
-        assertEquals("300K", COMPACT_FORMAT_SHORT.format(THREE_HUNDRED_K));
         assertEquals("300 thousand", COMPACT_FORMAT_LONG.format(THREE_HUNDRED_K));
 
-        assertEquals("3L", IN_COMPACT_FORMAT_SHORT.format(THREE_HUNDRED_K));
+        assertEquals("300K", COMPACT_FORMAT_SHORT.format(THREE_HUNDRED_K));
+        assertEquals("3L", IN_COMPACT_FORMAT_SHORT.format(THREE_HUNDRED_K)); //3 Lakhs
     }
 
     @Tag("java12")
@@ -46,6 +46,6 @@ public class Number_Test {
         assertEquals("50M", COMPACT_FORMAT_SHORT.format(FIFTY_MILLION));
         assertEquals("50 million", COMPACT_FORMAT_LONG.format(FIFTY_MILLION));
 
-        assertEquals("5Cr", IN_COMPACT_FORMAT_SHORT.format(FIFTY_MILLION));
+        assertEquals("5Cr", IN_COMPACT_FORMAT_SHORT.format(FIFTY_MILLION)); //5 Crore
     }
 }

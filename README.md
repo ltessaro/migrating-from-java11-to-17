@@ -1,4 +1,4 @@
-# Migrating from Java 11 to Java 17
+# What is new since Java 11 until Java 17
 
 This repository aims to be used as a support material during a presentation to software engineers.
 It covers through test the feature list below.

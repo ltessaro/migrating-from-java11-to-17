@@ -50,9 +50,6 @@ public class FileMismatch_Test {
         //then
         assertEquals(26, mismatchFirstAndSecond);
 
-        System.out.println("1st file: " + FIRST_FILE_CONTENT);
-        System.out.println("2nd file: " + SECOND_FILE_CONTENT);
-
         assertEquals("e file!", FIRST_FILE_CONTENT.substring((int)mismatchFirstAndSecond));
         assertEquals("is file.", SECOND_FILE_CONTENT.substring((int)mismatchFirstAndSecond));
 
